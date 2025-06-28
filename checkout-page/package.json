@@ -1,0 +1,19 @@
+{
+  "name": "facepay-checkout",
+  "version": "1.0.0",
+  "description": "FacePay Checkout Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3001 --open=/index.html",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "serve": "live-server --port=3001"
+  },
+  "keywords": ["tailwind", "checkout", "ecommerce"],
+  "author": "FacePay",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "live-server": "^1.2.2"
+  }
+}

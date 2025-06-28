@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 text-white font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none focus:ring-4;
+  }
+  
+  .form-input {
+    @apply block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500;
+  }
+  
+  .form-label {
+    @apply mb-2 block text-sm font-medium text-gray-900 dark:text-white;
+  }
+
+  .facepay-card {
+    @apply rounded-xl border-2 border-primary-200 bg-gradient-to-r from-primary-50 to-blue-50 p-6 dark:border-primary-800 dark:from-primary-900 dark:to-blue-900;
+  }
+
+  .face-scan-modal {
+    @apply fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50;
+  }
+
+  .face-scan-content {
+    @apply mx-4 w-full max-w-md rounded-lg bg-white p-6 shadow-xl dark:bg-gray-800;
+  }
+
+  .scan-progress-bar {
+    @apply h-full bg-primary-500 transition-all duration-1000;
+  }
+
+  .phone-notification {
+    @apply rounded bg-blue-500 p-2 text-white text-xs;
+  }
+}
